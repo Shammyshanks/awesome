@@ -82,6 +82,12 @@ local layout_commands = {
     pattern = {'f'},
     handler = function(mode) mode.stop() end
   },
+    {
+    description = "enter launcher mode",
+    pattern = {'r'},
+    handler = function(mode) mode.start("launcher") end
+  },
 }
+
 
 return layout_commands

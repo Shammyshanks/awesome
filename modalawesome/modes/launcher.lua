@@ -18,6 +18,16 @@ local launcher_commands = {
     pattern = {'Q'},
     handler = function() awesome.quit() end
   },
+    {
+    description = "close client",
+    pattern = {'q'},
+    handler = function()
+      local c = client.focus
+      if c then
+        c:kill()
+      end
+    end
+  },
   {
     description = "lua execute prompt",
     pattern = {'x'},

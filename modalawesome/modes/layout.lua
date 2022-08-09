@@ -79,7 +79,7 @@ local layout_commands = {
   },
   {
     description = "enter client mode",
-    pattern = {'f'},
+    pattern = {'F24'},
     handler = function(mode) mode.stop() end
   },
     {

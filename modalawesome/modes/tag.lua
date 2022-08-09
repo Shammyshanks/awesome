@@ -243,6 +243,16 @@ local tag_commands = {
       end
     end
   },
+    {
+    description = "close client",
+    pattern = {'q'},
+    handler = function()
+      local c = client.focus
+      if c then
+        c:kill()
+      end
+    end
+  },
   {
     description = "enter client mode",
     pattern = {'F24'},

@@ -47,7 +47,7 @@ local launcher_commands = {
   },
   {
     description = "enter client mode",
-    pattern = {'i'},
+    pattern = {'f'},
     handler = function(mode) mode.stop() end
   },
 }
